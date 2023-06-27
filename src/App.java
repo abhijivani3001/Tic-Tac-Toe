@@ -267,7 +267,7 @@ public class App extends Application{
 
         scene.addEventFilter(MouseEvent.ANY, handler); // To disable Mouse Events
 
-        PauseTransition pause=new PauseTransition(Duration.seconds(2)); // To pause for 2 seconds
+        PauseTransition pause=new PauseTransition(Duration.seconds(1)); // To pause for x seconds
 
         pause.setOnFinished(new EventHandler<ActionEvent>() {
             @Override
