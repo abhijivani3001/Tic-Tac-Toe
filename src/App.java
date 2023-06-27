@@ -93,8 +93,8 @@ public class App extends Application{
     public void drawBoard(GraphicsContext gc){
         gc.setFill(Color.web("#008080"));
         gc.fillRect(0, 0, screenBounds.getWidth(), screenBounds.getHeight());
-        gc.setFill(Color.WHITE);
-        gc.fillRect(startX, startY, WIDTH, HEIGHT);
+        // gc.setFill(Color.WHITE);
+        // gc.fillRect(startX, startY, WIDTH, HEIGHT);
 
         gc.setFill(Color.web("#152238"));
         gc.fillRect(startX+WIDTH/3-3, startY, 6, HEIGHT);
@@ -119,11 +119,11 @@ public class App extends Application{
                 
                 if(!checkArray[0][0] && x>=startX && x<=startX+WIDTH/3-3 && y>=startY && y<=startY+HEIGHT/3-3){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX, startY, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("O.gif"), startX, startY, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[0][0]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX, startY, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("X.gif"), startX, startY, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[0][0]=1;
                     }
                     checkArray[0][0]=true;
@@ -131,11 +131,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[0][1] && x>=startX+WIDTH/3+3 && x<=startX+2*WIDTH/3-3 && y>=startY && y<=startY+HEIGHT/3-3){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX+WIDTH/3+3, startY, WIDTH/3-6, HEIGHT/3-3);
+                        gc.drawImage(new Image("O.gif"), startX+WIDTH/3+3, startY, WIDTH/3-6, HEIGHT/3-3);
                         boardArray[0][1]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX+WIDTH/3+3, startY, WIDTH/3-6, HEIGHT/3-3);
+                        gc.drawImage(new Image("X.gif"), startX+WIDTH/3+3, startY, WIDTH/3-6, HEIGHT/3-3);
                         boardArray[0][1]=1;
                     }
                     checkArray[0][1]=true;
@@ -143,11 +143,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[0][2] && x>=startX+2*WIDTH/3+3 && x<=startX+WIDTH && y>=startY && y<=startY+HEIGHT/3-3){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX+2*WIDTH/3+3, startY, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("O.gif"), startX+2*WIDTH/3+3, startY, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[0][2]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX+2*WIDTH/3+3, startY, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("X.gif"), startX+2*WIDTH/3+3, startY, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[0][2]=1;
                     }
                     checkArray[0][2]=true;
@@ -155,11 +155,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[1][0] && x>=startX && x<=startX+WIDTH/3-3 && y>=startY+HEIGHT/3+3 && y<=startY+2*HEIGHT/3-3){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
+                        gc.drawImage(new Image("O.gif"), startX, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
                         boardArray[1][0]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
+                        gc.drawImage(new Image("X.gif"), startX, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
                         boardArray[1][0]=1;
                     }
                     checkArray[1][0]=true;
@@ -167,11 +167,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[1][1] && x>=startX+WIDTH/3+3 && x<=startX+2*WIDTH/3-3 && y>=startY+HEIGHT/3+3 && y<=startY+2*HEIGHT/3-3){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX+WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-6);
+                        gc.drawImage(new Image("O.gif"), startX+WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-6);
                         boardArray[1][1]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX+WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-6);
+                        gc.drawImage(new Image("X.gif"), startX+WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-6);
                         boardArray[1][1]=1;
                     }
                     checkArray[1][1]=true;
@@ -179,11 +179,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[1][2] && x>=startX+2*WIDTH/3+3 && x<=startX+WIDTH && y>=startY+HEIGHT/3+3 && y<=startY+2*HEIGHT/3-3){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX+2*WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
+                        gc.drawImage(new Image("O.gif"), startX+2*WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
                         boardArray[1][2]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX+2*WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
+                        gc.drawImage(new Image("X.gif"), startX+2*WIDTH/3+3, startY+HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-6);
                         boardArray[1][2]=1;
                     }
                     checkArray[1][2]=true;
@@ -191,11 +191,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[2][0] && x>=startX && x<=startX+WIDTH/3-3 && y>=startY+2*HEIGHT/3+3 && y<=startY+HEIGHT){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("O.gif"), startX, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[2][0]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("X.gif"), startX, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[2][0]=1;
                     }
                     checkArray[2][0]=true;
@@ -203,11 +203,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[2][1] && x>=startX+WIDTH/3+3 && x<=startX+2*WIDTH/3-3 && y>=startY+2*HEIGHT/3+3 && y<=startY+HEIGHT){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX+WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-3);
+                        gc.drawImage(new Image("O.gif"), startX+WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-3);
                         boardArray[2][1]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX+WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-3);
+                        gc.drawImage(new Image("X.gif"), startX+WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-6, HEIGHT/3-3);
                         boardArray[2][1]=1;
                     }
                     checkArray[2][1]=true;
@@ -215,11 +215,11 @@ public class App extends Application{
                 }
                 else if(!checkArray[2][2] && x>=startX+2*WIDTH/3+3 && x<=startX+WIDTH && y>=startY+2*HEIGHT/3+3 && y<=startY+HEIGHT){
                     if(count%2==0){
-                        gc.drawImage(new Image("pink.png"), startX+2*WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("O.gif"), startX+2*WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[2][2]=0;
                     }
                     else{
-                        gc.drawImage(new Image("yellow.jpg"), startX+2*WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
+                        gc.drawImage(new Image("X.gif"), startX+2*WIDTH/3+3, startY+2*HEIGHT/3+3, WIDTH/3-3, HEIGHT/3-3);
                         boardArray[2][2]=1;
                     }
                     checkArray[2][2]=true;
