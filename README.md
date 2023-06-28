@@ -1,16 +1,17 @@
-# Tic-Tac-Toe Game
+# 🎮 Tic-Tac-Toe Game
 
-<p>
+<div align="center" >
  ⁣⭕ ❕ ⭕ ❕ ❌ <br>
  ➖➕➖➕➖ <br>
  ⭕ ❕ ⁣❌ ❕ ⭕ <br>
  ➖➕➖➕➖ <br>
  ❌ ❕ ❌ ❕ ⭕ <br>
-</p>
+</div>
+<br>
 
 Welcome to the Tic-Tac-Toe game! This is a classic two-player game where you compete with another player to get three of your symbols in a row, either horizontally, vertically, or diagonally. This README file provides an overview of the game, its rules, and instructions on how to run and play it.
 
-## Game Rules
+## 📝 Game Rules
 
 1. The game is played on a 3x3 grid.
 2. Two players participate in the game. One player uses **X** as their symbol, and the other player uses **O**.
@@ -33,12 +34,10 @@ Welcome to the Tic-Tac-Toe game! This is a classic two-player game where you com
 
 5. The game will start, and you can now begin playing by following the on-screen instructions. -->
 
-## How to Play
+## 💡 How to Play
 
 1. After running the game, you will see a 3x3 grid on the screen, representing the Tic-Tac-Toe board.
 2. Initially each cell on the grid is empty.
-<!-- img -->
-
 3. For the Player-1's turn, he click any of the empty box in 3x3 grid and it will marked as **O**.
 4. For the Player-2's turn, he click any of the empty box in 3x3 grid and it will marked as **X**.
 5. Alternate turns with the other player until the game ends.
@@ -47,4 +46,6 @@ Welcome to the Tic-Tac-Toe game! This is a classic two-player game where you com
 
 Feel free to modify and extend the game according to your preferences and creativity.
 
-> ### Have fun playing Tic-Tac-Toe!
+<br>
+
+> ### Have fun playing Tic-Tac-Toe! 😄
