@@ -1,5 +1,13 @@
 # Tic-Tac-Toe Game
 
+<p>
+ ⁣⭕ ❕ ⭕ ❕ ❌ <br>
+ ➖➕➖➕➖ <br>
+ ⭕ ❕ ⁣❌ ❕ ⭕ <br>
+ ➖➕➖➕➖ <br>
+ ❌ ❕ ❌ ❕ ⭕ <br>
+</p>
+
 Welcome to the Tic-Tac-Toe game! This is a classic two-player game where you compete with another player to get three of your symbols in a row, either horizontally, vertically, or diagonally. This README file provides an overview of the game, its rules, and instructions on how to run and play it.
 
 ## Game Rules
