@@ -292,7 +292,7 @@ public class App extends Application{
                     gc.fillText("DRAW!", screenBounds.getWidth()/3, screenBounds.getHeight()/2);
                 }
 
-                spaceKeyPressed=false; // To enable SPACE Key event
+                // spaceKeyPressed=false; // To enable SPACE Key event
 
                 scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
                     @Override
