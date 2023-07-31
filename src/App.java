@@ -292,6 +292,10 @@ public class App extends Application{
                     gc.fillText("DRAW!", screenBounds.getWidth()/3, screenBounds.getHeight()/2);
                 }
 
+                gc.setFill(Color.WHITE);
+                gc.setFont(Font.font("Verdana",70));
+                gc.fillText("Enter SPACE to Start the Game",screenBounds.getWidth()/7.3,screenBounds.getHeight()/1.3);
+                
                 spaceKeyPressed=false; // To enable SPACE Key event
 
                 scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
